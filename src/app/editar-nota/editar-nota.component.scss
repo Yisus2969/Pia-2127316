@@ -1,0 +1,84 @@
+:host {
+  display: block;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(37, 36, 37, 0.8), rgba(160, 105, 255, 0.8)); /* Fondo degradado */
+  padding: 16px;
+}
+
+ion-card {
+  margin: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra difusa */
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px); /* Movimiento suave hacia arriba */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
+  }
+
+  ion-card-header {
+    background-color: #2266f7; /* Color de fondo para la cabecera */
+    color: white;
+    text-align: center;
+    padding: 16px;
+    border-radius: 16px 16px 0 0;
+    
+    ion-card-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+
+  ion-card-content {
+    padding: 16px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
+
+    ion-item {
+      margin-bottom: 16px; /* Espacio entre los campos */
+    }
+  }
+}
+
+/* Estilo para el botón */
+ion-button {
+  margin-top: 20px;
+  --background: #4e73df;
+  --background-activated: #2c56b0;
+  --background-focused: #244b92;
+  --background-hover: #6b82d7;
+  --color: white;
+  --border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: #3555a5;
+    transform: scale(1.05); /* Efecto de escala */
+  }
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 600px) {
+  ion-card {
+    margin: 8px;
+  }
+
+  ion-button {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  ion-card-header {
+    padding: 12px;
+  }
+
+  ion-card-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,110 @@
+<!-- <ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Post</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <app-menu></app-menu>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main-content"></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="title">Notas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fullscreen"> -->
+  <!-- Lista de Notas -->
+  <!-- <ion-list lines="full" class="list-fullscreen">
+    <ion-item-sliding *ngFor="let nota of notas">
+      <ion-item [routerLink]="['/nota-detalle', nota.id]">
+        <ion-label>
+          <h2>{{ nota.titulo }}</h2>
+          <p>{{ nota.descripcion }}</p>
+        </ion-label>
+      </ion-item> -->
+
+      <!-- Opción para eliminar la nota -->
+      <!-- <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="eliminarNota(nota)">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content> -->
+
+<!-- Botón Flotante para Agregar Nota -->
+<!-- <ion-fab slot="fixed" vertical="bottom" horizontal="end" (click)="abrirModalAgregarNota()">
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>App De Notas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <app-menu></app-menu>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main-content"></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="title">Notas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fullscreen">
+  <ion-list lines="full" class="list-fullscreen">
+    <ion-item-sliding *ngFor="let nota of notas">
+      <ion-item [routerLink]="['/nota-detalle', nota.id]" [ngStyle]="{ 'background-color': nota.color }">
+        <ion-label>
+          <h2>{{ nota.titulo }}</h2>
+          <p>{{ nota.descripcion }}</p>
+        </ion-label>
+      </ion-item>
+
+      <!-- Opción para eliminar la nota -->
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="eliminarNota(nota)">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
+
+<ion-fab slot="mixed" vertical="bottom" horizontal="end" (click)="abrirModalAgregarNota()">
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

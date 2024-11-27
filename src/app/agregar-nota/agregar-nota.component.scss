@@ -1,0 +1,71 @@
+ion-content {
+    --ion-background-color: rgb(37, 34, 37); /* Fondo rosa claro */
+    padding: 20px; /* Padding extra para los elementos */
+  }
+  
+  ion-toolbar {
+    --ion-background-color: #d020c4; /* Fondo morado */
+    color: white; /* Texto blanco */
+    text-align: center; /* Título centrado */
+    padding: 10px 0; /* Espaciado */
+  }
+  
+  ion-item {
+    --highlight-color-focused: #d020c4; /* Color morado en el enfoque */
+    margin-bottom: 20px; /* Espaciado entre los campos */
+  }
+  
+  ion-input, ion-textarea {
+    --background: #181616; /* Fondo blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Padding interno */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); /* Sombra sutil */
+  }
+  
+  ion-button {
+    --background: #ffe944; /* Fondo amarillo */
+    --border-radius: 25px; /* Bordes redondeados */
+    --box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23); /* Sombra en botones */
+    margin-top: 20px; /* Espaciado entre botones */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  ion-button:nth-child(1) {
+    --background: #ff9e00; /* Boton naranja para Crear la Nota */
+  }
+  
+  ion-button:nth-child(2) {
+    --background: #d020c4; /* Botón morado para Tomar Foto */
+  }
+  
+  ion-label {
+    font-size: 14px; /* Tamaño de la fuente más pequeño */
+    color: #d020c4; /* Color morado */
+  }
+  
+  ion-buttons ion-button {
+    --background: transparent; /* Botón de cierre transparente */
+    --border-radius: 50%; /* Botón circular */
+    --box-shadow: none; /* Sin sombra en el botón de cierre */
+  }
+  
+  ion-buttons ion-button ion-icon {
+    color: white; /* Ícono blanco */
+    font-size: 24px; /* Tamaño del ícono */
+  }
+  
+  ion-header {
+    --background: #d020c4; /* Fondo morado para el header */
+  }
+  
+  ion-card-content {
+    padding: 20px; /* Espaciado interno del contenido */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para el card */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco para el contenido */
+  }
+  
+  ion-item ion-label {
+    color: #205ed0; /* Color morado para las etiquetas */
+  }
+  

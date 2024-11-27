@@ -1,0 +1,36 @@
+/* Asegura que el contenido de la lista tenga suficiente espacio */
+.fullscreen {
+    padding: 10px;
+  }
+  
+  /* Estilo personalizado para la lista */
+  .list-fullscreen {
+    margin-top: 10px;
+  }
+  
+  /* Botón flotante */
+  ion-fab-button {
+    --background: #ff9e00; /* Fondo naranja */
+    --border-radius: 50%; /* Circular */
+    --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+  }
+  
+  /* Mejora el espaciado entre los ítems */
+  ion-item {
+    margin-bottom: 10px;
+    --background: transparent;
+    --border-radius: 10px;
+  }
+  
+  /* Estilos para el texto en las notas */
+  ion-item h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  ion-item p {
+    font-size: 14px;
+    color: #555;
+  }
+  

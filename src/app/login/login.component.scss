@@ -1,0 +1,94 @@
+// ion-content{
+//     --ion-background-color: rgb(255, 108, 235);
+// }
+
+// ion-toolbar{
+//     --ion-background-color: #d020c4;
+//     color: white;
+// }
+
+// -ion-button{
+//     --background: #ffe944;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ion-content {
+    --ion-background-color: rgb(10, 10, 10); /* Fondo rosa claro */
+    padding: 0 15px; /* Espaciado en los laterales */
+  }
+  
+  ion-toolbar {
+    --ion-background-color: #4020d0; /* Fondo morado */
+    color: white; /* Texto blanco */
+    text-align: center; /* Título centrado */
+    padding: 10px 0; /* Espaciado interno */
+  }
+  
+  ion-card {
+    margin: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #fff; /* Fondo blanco para el card */
+  }
+  
+  ion-card-content {
+    padding: 20px;
+  }
+  
+  ion-item {
+    --highlight-color-focused: #d020c4; /* Color morado para enfoque */
+  }
+  
+  ion-button {
+    --background: #ffe944; /* Fondo amarillo */
+    --border-radius: 25px; /* Bordes redondeados */
+    --box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23); /* Sombra en botones */
+    margin-top: 15px; /* Espaciado entre botones */
+    font-weight: bold; /* Hacer el texto más destacado */
+  }
+  
+  ion-button:nth-child(1) {
+    --background: #ff7300; /* Botón naranja para Iniciar sesión */
+  }
+  
+  ion-button:nth-child(2) {
+    --background: #2040d0; /* Botón morado para Registrar */
+  }
+  
+  ion-label {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    color: #d020c4; /* Color morado para las etiquetas */
+  }
+  
+  ion-input {
+    --padding-start: 10px; /* Padding para los inputs */
+    --background: #16151585; /* Fondo blanco para los inputs */
+    border-radius: 5px; /* Bordes redondeados en inputs */
+    margin-bottom: 10px; /* Espaciado entre los inputs */
+  }
+  
+  ion-item:last-child {
+    margin-bottom: 20px; /* Espacio extra abajo */
+  }
+  
+  ion-card-content ion-item {
+    margin-bottom: 10px; /* Espaciado entre los elementos dentro del card */
+  }
+  

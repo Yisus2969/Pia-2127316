@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nota</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-card *ngIf="nota" [ngStyle]="{ 'background-color': nota.color }">
+  <ion-card-header>
+    <ion-card-title>{{ nota.titulo }}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <p>{{ nota.descripcion }}</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <ion-button expand="block" (click)="editarNota()">Editar</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+<div *ngIf="!nota" class="no-note">
+  <p>No se ha seleccionado ninguna nota.</p>
+</div>

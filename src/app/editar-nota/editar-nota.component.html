@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Editar Nota</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/lista-notas"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Modificar Detalles</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Título</ion-label>
+        <ion-input [(ngModel)]="nota.titulo" placeholder="Escribe el título de la nota"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Descripción</ion-label>
+        <ion-textarea [(ngModel)]="nota.descripcion" placeholder="Escribe una breve descripción"></ion-textarea>
+      </ion-item>
+
+      <ion-button expand="block" (click)="guardarNota()">Guardar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

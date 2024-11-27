@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="userEmail">
+    <ion-card-header>
+      <ion-card-title>Perfil de Usuario</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Correo Electrónico</ion-label>
+        <ion-input type="text" readonly [value]="userEmail"></ion-input>
+      </ion-item>
+
+      <!-- Agrega más campos del perfil aquí si es necesario -->
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="!userEmail">
+    <ion-card-content>
+      <p>No hay usuario autenticado.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
